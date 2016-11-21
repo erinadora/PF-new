@@ -73,29 +73,29 @@
 
 	var _components2 = _interopRequireDefault(_components);
 
-	var _config = __webpack_require__(10);
+	var _config = __webpack_require__(11);
 
 	var _config2 = _interopRequireDefault(_config);
 
-	var _services = __webpack_require__(12);
+	var _services = __webpack_require__(13);
 
 	var _services2 = _interopRequireDefault(_services);
 
-	var _angularMaterial = __webpack_require__(13);
+	var _angularMaterial = __webpack_require__(14);
 
 	var _angularMaterial2 = _interopRequireDefault(_angularMaterial);
 
-	var _angularAria = __webpack_require__(16);
+	var _angularAria = __webpack_require__(17);
 
 	var _angularAria2 = _interopRequireDefault(_angularAria);
 
-	__webpack_require__(19);
+	__webpack_require__(20);
 
-	__webpack_require__(23);
+	__webpack_require__(27);
 
-	__webpack_require__(24);
+	__webpack_require__(28);
 
-	__webpack_require__(25);
+	__webpack_require__(29);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -46261,7 +46261,7 @@
 /* 6 */
 /***/ function(module, exports) {
 
-	module.exports = "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta name=\"viewport\" content=\"initial-scale=1.0, user-scalable=no\">\n    <meta charset=\"utf-8\">\n    <title>Alex Cole Anderson</title>\n    <link rel=\"stylesheet\" href=\"http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css\">\n</head>\n\n<body>\n    <main class=\"portfolio\"\n           md-whiteframe=\"6\"\n           snapscroll=\"\"\n           fit-window-height=\"\"\n           enable-arrow-keys=\"\"\n           snap-index=\"snapIndex\"\n           ng-swipe-up=\"snapIndex=snapIndex+1\"\n           ng-swipe-down=\"snapIndex=snapIndex-1\">\n           <div ng-init=\"snapIndex=0\">\n               <lander></lander>\n           </div>\n           <div ng-init=\"snapIndex=1\">\n               <lander></lander>\n           </div>\n           <div ng-init=\"snapIndex=0\">\n               <lander></lander>\n           </div>\n    </main>\n</body>\n\n</html>\n";
+	module.exports = "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta name=\"viewport\" content=\"initial-scale=1.0, user-scalable=no\">\n    <meta charset=\"utf-8\">\n    <title>Alex Cole Anderson</title>\n    <link rel=\"stylesheet\" href=\"http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css\">\n</head>\n\n<body>\n    <main>\n        <lander>\n        </lander>\n    </main>\n</body>\n\n</html>\n";
 
 /***/ },
 /* 7 */
@@ -46304,11 +46304,35 @@
 	            restrict: 'EA',
 	            template: _lander2.default,
 	            controller: ['$scope', '$location', '$window', function ($scope, $location, $window) {
-	                $scope.bigtitle = "hello";
-	                $scope.mdtitle = "kind world";
-	                $scope.smtitle = "I'm erin";
-	                $scope.xstitle = "I <3 you";
-	                $scope.body = "Lorem ipsum dolor sit amet, wisi praesent sem, tempor ornare hendrerit etiam pellentesque, ultricies conubia, diam conubia torquent, venenatis id lacus. Quam ut eu, mi nunc nulla non et a at, sed nulla. Mattis feugiat ut viverra sed dictumst. Et per sit ornare laoreet, metus faucibus ut justo felis vehicula. Ut felis in justo sed urna. Vel duis elit ante, ut vitae tellus in. Semper ut tortor arcu, nascetur metus vel lorem vestibulum, eu ante pellentesque, vel malesuada urna, adipiscing sit donec gravida scelerisque fermentum.";
+	                $scope.projects = [{
+	                    "Title": "Natalie Off Duty",
+	                    "Type": "Web Design",
+	                    "Desc": "Lorem ipsum dolor sit amet, wisi praesent sem, tempor ornare hendrerit etiam pellentesque, ultricies conubia, diam conubia torquent, venenatis id lacus.",
+	                    "img": "nod-thumb.png"
+	                }, {
+	                    "Title": "Hello Sitter",
+	                    "Type": "UX Design",
+	                    "Desc": "Lorem ipsum dolor sit amet, wisi praesent sem, tempor ornare hendrerit etiam pellentesque, ultricies conubia, diam conubia torquent, venenatis id lacus.",
+	                    "img": "hs-thumb.png"
+	                }, {
+	                    "Title": "Pinterest Redux",
+	                    "Type": "UX Design",
+	                    "Desc": "Lorem ipsum dolor sit amet, wisi praesent sem, tempor ornare hendrerit etiam pellentesque, ultricies conubia, diam conubia torquent, venenatis id lacus.",
+	                    "img": "pint-thumb.png"
+	                }];
+
+	                $scope.expanded = false;
+	                $scope.changeFlex = function (expanded) {
+	                    $scope.expanded = !$scope.expanded;
+
+	                    if ($scope.expanded) {
+	                        $scope.flexwidth1 = 100;
+	                        $scope.flexwidth2 = 0;
+	                    } else {
+	                        $scope.flexwidth1 = 50;
+	                        $scope.flexwidth2 = 50;
+	                    }
+	                };
 	            }]
 	        };
 	    }]);
@@ -46322,12 +46346,18 @@
 
 /***/ },
 /* 9 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<section layout=\"row\" class=\"portfolio\">\n    <div flex=\"30\">\n\n    </div>\n    <div flex=\"40\">\n        <h1>{{lgtitle}}</h1>\n        <h2>{{mdtitle}}</h2>\n        <h3>{{smtitle}}</h3>\n        <h4>{{xstitle}}</h4>\n        <p>\n            {{body}}\n        </p>\n    </div>\n    <div flex=\"30\">\n\n    </div>\n</section>\n";
+	module.exports = "<section layout=\"row\" layout-xs=\"column\" class=\"portfolio\">\n    <div id=\"left-side\" class=\"projects\" flex=\"{{flexwidth2}}\">\n      <a href=\"#\"><img id=\"logo\" src=\"" + __webpack_require__(10) + "\"></a>\n      <div id=\"static-content\">\n        <h1>Erin Goncer</h1>\n        <div id=\"bio\">\n          <h2>Digital design, front end web development, branding</h2>\n          <p>Something about this, or that, and then the other thing. Much love. Something about this, or that, and then the other thing. Much love.</p>\n        </div>\n      </div>\n      <nav>\n        <ul>\n          <li><a href='#'>Home</a></li>\n          <li><a href='#'>Contact</a></li>\n          <li><a href='http://linkedin.com/in/eringoncer' target=\"_blank\">Linked In</a></li>\n        </ul>\n      </nav>\n    </div>\n\n    <div class=\"projects\" flex=\"{{flexwidth1}}\" flex-xs=\"100\" snapscroll=\"\" fit-window-height=\"\" enable-arrow-keys=\"\" snap-index=\"snapIndex\" ng-swipe-up=\"snapIndex=snapIndex+1\" ng-swipe-down=\"snapIndex=snapIndex-1\">\n        <div ng-class=\"expanded ? 'project-expanded': 'project-right'\" ng-click=\"changeFlex(true)\"ng-init=\"snapIndex=0\">\n          <div class=\"content\">\n            <h3>{{projects[0].Title}}</h3>\n            <h4>{{projects[0].Type}}</h4>\n            <p>{{projects[0].Desc}}</p>\n            <p>what</p>\n            <img src=\"{{projects[0].img}}\" />\n          </div>\n        </div>\n        <div ng-class=\"expanded ? 'project-expanded': 'project-right'\" class=\"projects\" ng-click=\"changeFlex(true)\" ng-init=\"snapIndex=1\">\n          <div class=\"content\">\n            <h3>{{projects[1].Title}}</h3>\n            <h4>{{projects[1].Type}}</h4>\n            <p>{{projects[1].Desc}}</p>\n            <img src=\"{{projects[1].img}}\" />\n          </div>\n        </div>\n        <div ng-class=\"expanded ? 'project-expanded': 'project-right'\" class=\"projects\" ng-click=\"changeFlex(true)\" ng-init=\"snapIndex=0\">\n          <div class=\"content\">\n            <h3>{{projects[2].Title}}</h3>\n            <h4>{{projects[2].Type}}</h4>\n            <p>{{projects[2].Desc}}</p>\n            <img src=\"{{projects[2].img}}\" />\n          </div>\n        </div>\n    </div>\n\n</section>\n";
 
 /***/ },
 /* 10 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,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"
+
+/***/ },
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46340,14 +46370,14 @@
 	  (0, _route2.default)(angularModule);
 	};
 
-	var _route = __webpack_require__(11);
+	var _route = __webpack_require__(12);
 
 	var _route2 = _interopRequireDefault(_route);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -46374,7 +46404,7 @@
 	};
 
 /***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -46388,33 +46418,33 @@
 	};
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Should already be required, here for clarity
 	__webpack_require__(3);
 
 	// Load Angular and dependent libs
-	__webpack_require__(14);
-	__webpack_require__(16);
+	__webpack_require__(15);
+	__webpack_require__(17);
 
 	// Now load Angular Material
-	__webpack_require__(18);
+	__webpack_require__(19);
 
 	// Export namespace
 	module.exports = 'ngMaterial';
 
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(15);
+	__webpack_require__(16);
 	module.exports = 'ngAnimate';
 
 
 /***/ },
-/* 15 */
+/* 16 */
 /***/ function(module, exports) {
 
 	/**
@@ -50559,15 +50589,15 @@
 
 
 /***/ },
-/* 16 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(17);
+	__webpack_require__(18);
 	module.exports = 'ngAria';
 
 
 /***/ },
-/* 17 */
+/* 18 */
 /***/ function(module, exports) {
 
 	/**
@@ -50978,7 +51008,7 @@
 
 
 /***/ },
-/* 18 */
+/* 19 */
 /***/ function(module, exports) {
 
 	/*!
@@ -83933,16 +83963,16 @@
 	})(window, window.angular);;window.ngMaterial={version:{full: "1.1.1"}};
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(20);
+	var content = __webpack_require__(21);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(22)(content, {});
+	var update = __webpack_require__(26)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -83959,21 +83989,21 @@
 	}
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(21)();
+	exports = module.exports = __webpack_require__(22)();
 	// imports
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700&subset=latin-ext);", ""]);
 
 	// module
-	exports.push([module.id, ".plain-text {\n  font-family: \"Courier New\", Courier, monospace; }\n\nhtml,\nbody,\n.viewport {\n  font-family: 'Oswald', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  color: #131533;\n  background: white;\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box; }\n\n*:focus {\n  outline: none;\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box; }\n\na {\n  text-decoration: none; }\n\n.portfolio {\n  height: 100vh;\n  margin: 0 auto; }\n", ""]);
+	exports.push([module.id, ".plain-text {\n  font-family: \"Courier New\", Courier, monospace; }\n\n@font-face {\n  src: url(" + __webpack_require__(23) + ");\n  font-family: roung; }\n\n@font-face {\n  src: url(" + __webpack_require__(24) + ");\n  font-family: moons; }\n\n@font-face {\n  src: url(" + __webpack_require__(25) + ");\n  font-family: minion; }\n\nhtml,\nbody,\n.viewport {\n  font-family: 'roung', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  color: #212121;\n  background: #fff;\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box; }\n\n*:focus {\n  outline: none;\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box; }\n\na {\n  text-decoration: none; }\n\n.portfolio {\n  height: 100vh;\n  margin: 0 auto; }\n\n.projects {\n  -webkit-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out; }\n\n#left-side {\n  background-color: #fff; }\n\n#logo {\n  margin-top: 25px;\n  margin-left: 30px;\n  width: 55px; }\n\n#static-content {\n  padding: 15px;\n  margin: 100px;\n  text-align: left;\n  width: 353px;\n  height: 393px; }\n  #static-content h2 {\n    text-transform: uppercase;\n    font-size: 1.4em;\n    font-weight: lighter; }\n  #static-content p {\n    font-family: minion;\n    letter-spacing: 1px;\n    margin-top: 40px; }\n\nh1 {\n  font-family: moons;\n  font-size: 45px;\n  margin-bottom: 70px; }\n\nnav {\n  margin-bottom: 15px;\n  bottom: 0 !important;\n  position: fixed; }\n  nav ul {\n    list-style-type: none; }\n  nav li {\n    display: inline-block;\n    text-transform: uppercase;\n    margin-right: 20px; }\n  nav a {\n    text-decoration: none;\n    color: inherit; }\n  nav a:hover {\n    opacity: 0.5;\n    transition: all ease .5s; }\n\n.project-right, .project-expanded {\n  background-color: #fff;\n  height: 100% !important;\n  margin-top: -15px;\n  background-color: lightblue; }\n\n.content {\n  padding-top: 125px;\n  width: 85%;\n  margin: auto; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 21 */
+/* 22 */
 /***/ function(module, exports) {
 
 	/*
@@ -84029,7 +84059,25 @@
 
 
 /***/ },
-/* 22 */
+/* 23 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "ac7429c25ecbe5f0256a3b0eef0ea98e.otf";
+
+/***/ },
+/* 24 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "4f1be575ba0bfc96eae36cdbdece770c.otf";
+
+/***/ },
+/* 25 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "8a95f9e772b95db44900d873454df194.otf";
+
+/***/ },
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -84281,7 +84329,7 @@
 
 
 /***/ },
-/* 23 */
+/* 27 */
 /***/ function(module, exports) {
 
 	/**
@@ -84346,7 +84394,7 @@
 
 
 /***/ },
-/* 24 */
+/* 28 */
 /***/ function(module, exports) {
 
 	/**
@@ -84502,7 +84550,7 @@
 
 
 /***/ },
-/* 25 */
+/* 29 */
 /***/ function(module, exports) {
 
 	/**

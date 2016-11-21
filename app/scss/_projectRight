@@ -6,7 +6,24 @@ background-color: lightblue;
 }
 
 .content {
-  padding-top: 125px;
+  padding-top: 160px;
   width: 85%;
-  margin: auto
+  margin: auto;
+  h3, h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    font-weight: lighter;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    width: 353px;
+    font-family: minion;
+    letter-spacing: 1px;
+  }
 }

@@ -16,29 +16,38 @@
         </ul>
       </nav>
     </div>
+
     <div class="projects" flex="{{flexwidth1}}" flex-xs="100" snapscroll="" fit-window-height="" enable-arrow-keys="" snap-index="snapIndex" ng-swipe-up="snapIndex=snapIndex+1" ng-swipe-down="snapIndex=snapIndex-1">
         <div ng-class="expanded ? 'project-expanded': 'project-right'" ng-click="changeFlex(true)"ng-init="snapIndex=0">
           <div class="content">
-            <p>{{projects[0].Title}}</p>
-            <p>{{projects[0].Type}}</p>
+            <h3>{{projects[0].Title}}</h3>
+            <h4>{{projects[0].Type}}</h4>
             <p>{{projects[0].Desc}}</p>
             <img src="{{projects[0].img}}" />
           </div>
         </div>
         <div ng-class="expanded ? 'project-expanded': 'project-right'" class="projects" ng-click="changeFlex(true)" ng-init="snapIndex=1">
           <div class="content">
-            <p>{{projects[1].Title}}</p>
-            <p>{{projects[1].Type}}</p>
+            <h3>{{projects[1].Title}}</h3>
+            <h4>{{projects[1].Type}}</h4>
             <p>{{projects[1].Desc}}</p>
             <img src="{{projects[1].img}}" />
           </div>
         </div>
         <div ng-class="expanded ? 'project-expanded': 'project-right'" class="projects" ng-click="changeFlex(true)" ng-init="snapIndex=0">
           <div class="content">
-            <p>{{projects[2].Title}}</p>
-            <p>{{projects[2].Type}}</p>
+            <h3>{{projects[2].Title}}</h3>
+            <h4>{{projects[2].Type}}</h4>
             <p>{{projects[2].Desc}}</p>
             <img src="{{projects[2].img}}" />
+          </div>
+        </div>
+        <div ng-class="expanded ? 'project-expanded': 'project-right'" class="projects" ng-click="changeFlex(true)" ng-init="snapIndex=1">
+          <div class="content">
+            <h3>{{projects[3].Title}}</h3>
+            <h4>{{projects[3].Type}}</h4>
+            <p>{{projects[3].Desc}}</p>
+            <img src="{{projects[3].img}}" />
           </div>
         </div>
     </div>

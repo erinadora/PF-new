@@ -13,18 +13,23 @@ export default function(angularModule) {
                 $scope.projects = [{
                     "Title": "Natalie Off Duty",
                     "Type": "Web Design",
-                    "Desc": "Lorem ipsum dolor sit amet, wisi praesent sem, tempor ornare hendrerit etiam pellentesque, ultricies conubia, diam conubia torquent, venenatis id lacus.",
-                    "img": "nod-thumb.png"
+                    "Desc": "An easily accessible blog with clean design and functionality.",
+                    "img": "./../images/NOD-thumb.png"
                 }, {
                     "Title": "Hello Sitter",
                     "Type": "UX Design",
-                    "Desc": "Lorem ipsum dolor sit amet, wisi praesent sem, tempor ornare hendrerit etiam pellentesque, ultricies conubia, diam conubia torquent, venenatis id lacus.",
-                    "img": "hs-thumb.png"
+                    "Desc": "I redesigned the welcome screens to a baby sitting app which is now live on the AppStore. The design called for a beautiful and engaging UX that parallels the hello sitter brand.",
+                    "img": "../../images/HS-thumb.png"
                 }, {
                     "Title": "Pinterest Redux",
                     "Type": "UX Design",
-                    "Desc": "Lorem ipsum dolor sit amet, wisi praesent sem, tempor ornare hendrerit etiam pellentesque, ultricies conubia, diam conubia torquent, venenatis id lacus.",
-                    "img": "pint-thumb.png"
+                    "Desc": "With instagram's new look, I decided Pinterest needed a fresh paint job as well. I did a Pinterest Redux which brings Pinterest back into the foreground of social media outlets for clean and sharp UX.",
+                    "img": "../../images/Pint-thumb.png"
+                }, {
+                    "Title": "Reeli: A Video Clip Compiler",
+                    "Type": "UX Design",
+                    "Desc": "My design project at Epicodus required 39 artboards as well as invision implementation. Reeli is a new take on creating 15 second video clip compilations between friends.",
+                    "img": "../../images/Reeli-thumb.png"
                 }];
 
                 $scope.expanded = false;
