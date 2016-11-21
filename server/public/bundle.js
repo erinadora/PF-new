@@ -91,11 +91,11 @@
 
 	__webpack_require__(20);
 
-	__webpack_require__(27);
+	__webpack_require__(23);
 
-	__webpack_require__(28);
+	__webpack_require__(24);
 
-	__webpack_require__(29);
+	__webpack_require__(25);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -46307,18 +46307,23 @@
 	                $scope.projects = [{
 	                    "Title": "Natalie Off Duty",
 	                    "Type": "Web Design",
-	                    "Desc": "Lorem ipsum dolor sit amet, wisi praesent sem, tempor ornare hendrerit etiam pellentesque, ultricies conubia, diam conubia torquent, venenatis id lacus.",
-	                    "img": "nod-thumb.png"
+	                    "Desc": "An easily accessible blog with clean design and functionality.",
+	                    "img": "./../images/NOD-thumb.png"
 	                }, {
 	                    "Title": "Hello Sitter",
 	                    "Type": "UX Design",
-	                    "Desc": "Lorem ipsum dolor sit amet, wisi praesent sem, tempor ornare hendrerit etiam pellentesque, ultricies conubia, diam conubia torquent, venenatis id lacus.",
-	                    "img": "hs-thumb.png"
+	                    "Desc": "I redesigned the welcome screens to a baby sitting app which is now live on the AppStore. The design called for a beautiful and engaging UX that parallels the hello sitter brand.",
+	                    "img": "../../images/HS-thumb.png"
 	                }, {
 	                    "Title": "Pinterest Redux",
 	                    "Type": "UX Design",
-	                    "Desc": "Lorem ipsum dolor sit amet, wisi praesent sem, tempor ornare hendrerit etiam pellentesque, ultricies conubia, diam conubia torquent, venenatis id lacus.",
-	                    "img": "pint-thumb.png"
+	                    "Desc": "With instagram's new look, I decided Pinterest needed a fresh paint job as well. I did a Pinterest Redux which brings Pinterest back into the foreground of social media outlets for clean and sharp UX.",
+	                    "img": "../../images/Pint-thumb.png"
+	                }, {
+	                    "Title": "Reeli: A Video Clip Compiler",
+	                    "Type": "UX Design",
+	                    "Desc": "My design project at Epicodus required 39 artboards as well as invision implementation. Reeli is a new take on creating 15 second video clip compilations between friends.",
+	                    "img": "../../images/Reeli-thumb.png"
 	                }];
 
 	                $scope.expanded = false;
@@ -46348,7 +46353,7 @@
 /* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<section layout=\"row\" layout-xs=\"column\" class=\"portfolio\">\n    <div id=\"left-side\" class=\"projects\" flex=\"{{flexwidth2}}\">\n      <a href=\"#\"><img id=\"logo\" src=\"" + __webpack_require__(10) + "\"></a>\n      <div id=\"static-content\">\n        <h1>Erin Goncer</h1>\n        <div id=\"bio\">\n          <h2>Digital design, front end web development, branding</h2>\n          <p>Something about this, or that, and then the other thing. Much love. Something about this, or that, and then the other thing. Much love.</p>\n        </div>\n      </div>\n      <nav>\n        <ul>\n          <li><a href='#'>Home</a></li>\n          <li><a href='#'>Contact</a></li>\n          <li><a href='http://linkedin.com/in/eringoncer' target=\"_blank\">Linked In</a></li>\n        </ul>\n      </nav>\n    </div>\n\n    <div class=\"projects\" flex=\"{{flexwidth1}}\" flex-xs=\"100\" snapscroll=\"\" fit-window-height=\"\" enable-arrow-keys=\"\" snap-index=\"snapIndex\" ng-swipe-up=\"snapIndex=snapIndex+1\" ng-swipe-down=\"snapIndex=snapIndex-1\">\n        <div ng-class=\"expanded ? 'project-expanded': 'project-right'\" ng-click=\"changeFlex(true)\"ng-init=\"snapIndex=0\">\n          <div class=\"content\">\n            <h3>{{projects[0].Title}}</h3>\n            <h4>{{projects[0].Type}}</h4>\n            <p>{{projects[0].Desc}}</p>\n            <p>what</p>\n            <img src=\"{{projects[0].img}}\" />\n          </div>\n        </div>\n        <div ng-class=\"expanded ? 'project-expanded': 'project-right'\" class=\"projects\" ng-click=\"changeFlex(true)\" ng-init=\"snapIndex=1\">\n          <div class=\"content\">\n            <h3>{{projects[1].Title}}</h3>\n            <h4>{{projects[1].Type}}</h4>\n            <p>{{projects[1].Desc}}</p>\n            <img src=\"{{projects[1].img}}\" />\n          </div>\n        </div>\n        <div ng-class=\"expanded ? 'project-expanded': 'project-right'\" class=\"projects\" ng-click=\"changeFlex(true)\" ng-init=\"snapIndex=0\">\n          <div class=\"content\">\n            <h3>{{projects[2].Title}}</h3>\n            <h4>{{projects[2].Type}}</h4>\n            <p>{{projects[2].Desc}}</p>\n            <img src=\"{{projects[2].img}}\" />\n          </div>\n        </div>\n    </div>\n\n</section>\n";
+	module.exports = "<section layout=\"row\" layout-xs=\"column\" class=\"portfolio\">\n    <div id=\"left-side\" class=\"projects\" flex=\"{{flexwidth2}}\">\n      <a href=\"#\"><img id=\"logo\" src=\"" + __webpack_require__(10) + "\"></a>\n      <div id=\"static-content\">\n        <h1>Erin Goncer</h1>\n        <div id=\"bio\">\n          <h2>Digital design, front end web development, branding</h2>\n          <p>Something about this, or that, and then the other thing. Much love. Something about this, or that, and then the other thing. Much love.</p>\n        </div>\n      </div>\n      <nav>\n        <ul>\n          <li><a href='#'>Home</a></li>\n          <li><a href='#'>Contact</a></li>\n          <li><a href='http://linkedin.com/in/eringoncer' target=\"_blank\">Linked In</a></li>\n        </ul>\n      </nav>\n    </div>\n\n    <div class=\"projects\" flex=\"{{flexwidth1}}\" flex-xs=\"100\" snapscroll=\"\" fit-window-height=\"\" enable-arrow-keys=\"\" snap-index=\"snapIndex\" ng-swipe-up=\"snapIndex=snapIndex+1\" ng-swipe-down=\"snapIndex=snapIndex-1\">\n        <div ng-class=\"expanded ? 'project-expanded': 'project-right'\" ng-click=\"changeFlex(true)\"ng-init=\"snapIndex=0\">\n          <div class=\"content\">\n            <h3>{{projects[0].Title}}</h3>\n            <h4>{{projects[0].Type}}</h4>\n            <p>{{projects[0].Desc}}</p>\n            <img src=\"{{projects[0].img}}\" />\n          </div>\n        </div>\n        <div ng-class=\"expanded ? 'project-expanded': 'project-right'\" class=\"projects\" ng-click=\"changeFlex(true)\" ng-init=\"snapIndex=1\">\n          <div class=\"content\">\n            <h3>{{projects[1].Title}}</h3>\n            <h4>{{projects[1].Type}}</h4>\n            <p>{{projects[1].Desc}}</p>\n            <img src=\"{{projects[1].img}}\" />\n          </div>\n        </div>\n        <div ng-class=\"expanded ? 'project-expanded': 'project-right'\" class=\"projects\" ng-click=\"changeFlex(true)\" ng-init=\"snapIndex=0\">\n          <div class=\"content\">\n            <h3>{{projects[2].Title}}</h3>\n            <h4>{{projects[2].Type}}</h4>\n            <p>{{projects[2].Desc}}</p>\n            <img src=\"{{projects[2].img}}\" />\n          </div>\n        </div>\n        <div ng-class=\"expanded ? 'project-expanded': 'project-right'\" class=\"projects\" ng-click=\"changeFlex(true)\" ng-init=\"snapIndex=1\">\n          <div class=\"content\">\n            <h3>{{projects[3].Title}}</h3>\n            <h4>{{projects[3].Type}}</h4>\n            <p>{{projects[3].Desc}}</p>\n            <img src=\"{{projects[3].img}}\" />\n          </div>\n        </div>\n    </div>\n\n</section>\n";
 
 /***/ },
 /* 10 */
@@ -56331,7 +56336,7 @@
 	    '800': '#424242',
 	    '900': '#212121',
 	    'A100': '#ffffff',
-	    'A200': '#131533',
+	    'A200': '#000000',
 	    'A400': '#303030',
 	    'A700': '#616161',
 	    'contrastDefaultColor': 'dark',
@@ -83969,10 +83974,10 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(21);
+	var content = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./main.scss\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(26)(content, {});
+	var update = __webpack_require__(22)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -83989,95 +83994,8 @@
 	}
 
 /***/ },
-/* 21 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(22)();
-	// imports
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700&subset=latin-ext);", ""]);
-
-	// module
-	exports.push([module.id, ".plain-text {\n  font-family: \"Courier New\", Courier, monospace; }\n\n@font-face {\n  src: url(" + __webpack_require__(23) + ");\n  font-family: roung; }\n\n@font-face {\n  src: url(" + __webpack_require__(24) + ");\n  font-family: moons; }\n\n@font-face {\n  src: url(" + __webpack_require__(25) + ");\n  font-family: minion; }\n\nhtml,\nbody,\n.viewport {\n  font-family: 'roung', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  color: #212121;\n  background: #fff;\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box; }\n\n*:focus {\n  outline: none;\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box; }\n\na {\n  text-decoration: none; }\n\n.portfolio {\n  height: 100vh;\n  margin: 0 auto; }\n\n.projects {\n  -webkit-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out; }\n\n#left-side {\n  background-color: #fff; }\n\n#logo {\n  margin-top: 25px;\n  margin-left: 30px;\n  width: 55px; }\n\n#static-content {\n  padding: 15px;\n  margin: 100px;\n  text-align: left;\n  width: 353px;\n  height: 393px; }\n  #static-content h2 {\n    text-transform: uppercase;\n    font-size: 1.4em;\n    font-weight: lighter; }\n  #static-content p {\n    font-family: minion;\n    letter-spacing: 1px;\n    margin-top: 40px; }\n\nh1 {\n  font-family: moons;\n  font-size: 45px;\n  margin-bottom: 70px; }\n\nnav {\n  margin-bottom: 15px;\n  bottom: 0 !important;\n  position: fixed; }\n  nav ul {\n    list-style-type: none; }\n  nav li {\n    display: inline-block;\n    text-transform: uppercase;\n    margin-right: 20px; }\n  nav a {\n    text-decoration: none;\n    color: inherit; }\n  nav a:hover {\n    opacity: 0.5;\n    transition: all ease .5s; }\n\n.project-right, .project-expanded {\n  background-color: #fff;\n  height: 100% !important;\n  margin-top: -15px;\n  background-color: lightblue; }\n\n.content {\n  padding-top: 125px;\n  width: 85%;\n  margin: auto; }\n", ""]);
-
-	// exports
-
-
-/***/ },
+/* 21 */,
 /* 22 */
-/***/ function(module, exports) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	// css base code, injected by the css-loader
-	module.exports = function() {
-		var list = [];
-
-		// return the list of modules as css string
-		list.toString = function toString() {
-			var result = [];
-			for(var i = 0; i < this.length; i++) {
-				var item = this[i];
-				if(item[2]) {
-					result.push("@media " + item[2] + "{" + item[1] + "}");
-				} else {
-					result.push(item[1]);
-				}
-			}
-			return result.join("");
-		};
-
-		// import a list of modules into the list
-		list.i = function(modules, mediaQuery) {
-			if(typeof modules === "string")
-				modules = [[null, modules, ""]];
-			var alreadyImportedModules = {};
-			for(var i = 0; i < this.length; i++) {
-				var id = this[i][0];
-				if(typeof id === "number")
-					alreadyImportedModules[id] = true;
-			}
-			for(i = 0; i < modules.length; i++) {
-				var item = modules[i];
-				// skip already imported module
-				// this implementation is not 100% perfect for weird media query combinations
-				//  when a module is imported multiple times with different media queries.
-				//  I hope this will never occur (Hey this way we have smaller bundles)
-				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-					if(mediaQuery && !item[2]) {
-						item[2] = mediaQuery;
-					} else if(mediaQuery) {
-						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-					}
-					list.push(item);
-				}
-			}
-		};
-		return list;
-	};
-
-
-/***/ },
-/* 23 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "ac7429c25ecbe5f0256a3b0eef0ea98e.otf";
-
-/***/ },
-/* 24 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "4f1be575ba0bfc96eae36cdbdece770c.otf";
-
-/***/ },
-/* 25 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "8a95f9e772b95db44900d873454df194.otf";
-
-/***/ },
-/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -84329,15 +84247,15 @@
 
 
 /***/ },
-/* 27 */
+/* 23 */
 /***/ function(module, exports) {
 
 	/**
 	 * angular-wheelie
-	 * Version: 1.1.2
+	 * Version: 2.1.0
 	 * (c) 2016 Joel Mukuthu
 	 * MIT License
-	 * Built on: 13-08-2016 17:06:59 GMT+0200
+	 * Built on: 10-11-2016 13:50:20 GMT+0100
 	 **/
 
 	angular.module('wheelie', []);
@@ -84345,48 +84263,64 @@
 	angular
 	.module('wheelie')
 	.factory('wheelie', [function () {
+	    var isDefined = angular.isDefined;
+	    var isFunction = angular.isFunction;
+
 	    return {
-	        bind: function (element, callbacks) {
+	        bind: function (element, callbacks, ignoreClassName) {
 	            callbacks = callbacks || {};
-	            if (angular.isDefined(callbacks.up) && !angular.isFunction(callbacks.up)) {
+
+	            if (isDefined(callbacks.up) && !isFunction(callbacks.up)) {
 	                throw new Error('The \'up\' callback must be a function');
 	            }
-	            if (angular.isDefined(callbacks.down) && !angular.isFunction(callbacks.down)) {
+	            if (isDefined(callbacks.down) && !isFunction(callbacks.down)) {
 	                throw new Error('The \'down\' callback must be a function');
 	            }
-	            if (!angular.isDefined(callbacks.up) && !angular.isDefined(callbacks.down)) {
-	                throw new Error('At least one callback (\'up\' or \'down\') must be provided');
+	            if (isDefined(callbacks.left) && !isFunction(callbacks.left)) {
+	                throw new Error('The \'left\' callback must be a function');
+	            }
+	            if (isDefined(callbacks.right) && !isFunction(callbacks.right)) {
+	                throw new Error('The \'right\' callback must be a function');
+	            }
+	            if (!isDefined(callbacks.up) &&
+	                !isDefined(callbacks.down) &&
+	                !isDefined(callbacks.left) &&
+	                !isDefined(callbacks.right)) {
+	                throw new Error(
+	                    'At least one callback (\'up\', \'down\', \'left\' or \'right\') must be provided'
+	                );
 	            }
 
 	            function bindWheel(e) {
 	                if (e.originalEvent) {
 	                    e = e.originalEvent;
 	                }
-	                var delta;
-	                delta = Math.max(-1, Math.min(1, (e.wheelDelta || -(e.deltaY || e.detail))));
-	                if (isNaN(delta) || delta === 0) {
+
+	                if (ignoreClassName &&
+	                    angular.element(e.target).hasClass(ignoreClassName)) {
 	                    return;
 	                }
-	                if (delta > 0) {
-	                    if (callbacks.up) {
-	                        callbacks.up(e);
-	                    }
-	                } else {
-	                    if (callbacks.down) {
-	                        callbacks.down(e);
-	                    }
+
+	                if (e.deltaX) {
+	                    e.deltaX < 0 && callbacks.left && callbacks.left(e);
+	                    e.deltaX > 0 && callbacks.right && callbacks.right(e);
+	                }
+
+	                if (e.deltaY) {
+	                    e.deltaY < 0 && callbacks.up && callbacks.up(e);
+	                    e.deltaY > 0 && callbacks.down && callbacks.down(e);
 	                }
 	            }
 
 	            element.data('___wheelie_bindWheel___', bindWheel);
-	            element.on('wheel mousewheel onmousewheel', bindWheel);
+	            element.on('wheel', bindWheel);
 	        },
 
 	        unbind: function (element) {
 	            var bindWheel = element.data('___wheelie_bindWheel___');
-	            if (angular.isFunction(bindWheel)) {
+	            if (isFunction(bindWheel)) {
 	                element.data('___wheelie_bindWheel___', null);
-	                element.off('wheel mousewheel onmousewheel', bindWheel);
+	                element.off('wheel', bindWheel);
 	            }
 	        }
 	    };
@@ -84394,7 +84328,7 @@
 
 
 /***/ },
-/* 28 */
+/* 24 */
 /***/ function(module, exports) {
 
 	/**
@@ -84550,15 +84484,15 @@
 
 
 /***/ },
-/* 29 */
+/* 25 */
 /***/ function(module, exports) {
 
 	/**
 	 * angular-snapscroll
-	 * Version: 1.0.0
+	 * Version: 1.1.0
 	 * (c) 2014-2016 Joel Mukuthu
 	 * MIT License
-	 * Built on: 23-09-2016 17:15:38 GMT+0200
+	 * Built on: 10-11-2016 18:25:46 GMT+0100
 	 **/
 
 	(function () {
@@ -84566,9 +84500,10 @@
 	        .module('snapscroll', ['wheelie', 'scrollie'])
 	        .value('defaultSnapscrollScrollEasing', undefined)
 	        .value('defaultSnapscrollScrollDelay', 250)
-	        .value('defaultSnapscrollSnapDuration', 1400)
+	        .value('defaultSnapscrollSnapDuration', 800)
 	        .value('defaultSnapscrollResizeDelay', 400)
-	        .value('defaultSnapscrollBindScrollTimeout', 400);
+	        .value('defaultSnapscrollBindScrollTimeout', 400)
+	        .value('defaultSnapscrollPreventDoubleSnapDelay', 1000);
 	})();
 
 	(function () {
@@ -84663,6 +84598,7 @@
 	        'defaultSnapscrollScrollDelay',
 	        'defaultSnapscrollSnapDuration',
 	        'defaultSnapscrollBindScrollTimeout',
+	        'defaultSnapscrollPreventDoubleSnapDelay',
 	        function (
 	            $timeout,
 	            $document,
@@ -84671,7 +84607,8 @@
 	            defaultSnapscrollScrollEasing,
 	            defaultSnapscrollScrollDelay,
 	            defaultSnapscrollSnapDuration,
-	            defaultSnapscrollBindScrollTimeout
+	            defaultSnapscrollBindScrollTimeout,
+	            defaultSnapscrollPreventDoubleSnapDelay
 	        ) {
 	            return {
 	                restrict: 'A',
@@ -84818,7 +84755,25 @@
 	                        return scrollie.to.apply(scrollie, args).then(function () {
 	                            scope.snapDirection = undefined;
 	                            bindScrollAfterDelay();
+	                            allowNextSnapAfterDelay();
 	                        });
+	                    }
+
+	                    function allowNextSnapAfterDelay() {
+	                        function allowNextSnap() {
+	                            scope.preventUp = false;
+	                            scope.preventDown = false;
+	                        }
+	                        if (scope.preventUp || scope.preventDown) {
+	                            if (scope.preventDoubleSnapDelay === false) {
+	                                allowNextSnap();
+	                            } else {
+	                                $timeout(
+	                                    allowNextSnap,
+	                                    scope.preventDoubleSnapDelay
+	                                );
+	                            }
+	                        }
 	                    }
 
 	                    function isScrollable() {
@@ -84965,12 +84920,19 @@
 	                        return compositeIndex;
 	                    }
 
-	                    function snap(direction) {
+	                    function snap(direction, source) {
 	                        if (!isScrollable()) {
 	                            return;
 	                        }
 
+	                        direction === 'up' && (scope.preventDown = false);
+	                        direction === 'down' && (scope.preventUp = false);
+
 	                        if (scope.snapDirection === direction) {
+	                            return true;
+	                        }
+
+	                        if (scope.preventUp || scope.preventDown) {
 	                            return true;
 	                        }
 
@@ -84989,37 +84951,43 @@
 	                            return;
 	                        }
 
+	                        if (source === 'wheel') {
+	                            direction === 'up' && (scope.preventUp = true);
+	                            direction === 'down' && (scope.preventDown = true);
+	                        }
+
 	                        scope.$apply(function () {
 	                            scope.compositeIndex = rectifyCompositeIndex(
 	                                newCompositeIndex
 	                            );
 	                        });
+
 	                        return true;
 	                    }
 
-	                    function snapUp() {
-	                        return snap('up');
+	                    function snapUp(source) {
+	                        return snap('up', source);
 	                    }
 
-	                    function snapDown() {
-	                        return snap('down');
+	                    function snapDown(source) {
+	                        return snap('down', source);
 	                    }
 
 	                    function bindWheel() {
 	                        wheelie.bind(element, {
 	                            up: function (e) {
 	                                e.preventDefault();
-	                                if (snapUp()) {
+	                                if (snapUp('wheel')) {
 	                                    e.stopPropagation();
 	                                }
 	                            },
 	                            down: function (e) {
 	                                e.preventDefault();
-	                                if (snapDown()) {
+	                                if (snapDown('wheel')) {
 	                                    e.stopPropagation();
 	                                }
 	                            }
-	                        });
+	                        }, scope.ignoreWheelClass);
 	                    }
 
 	                    function unbindWheel() {
@@ -85216,6 +85184,24 @@
 	                            scope.scrollDelay = scrollDelay;
 	                        }
 
+	                        var preventDoubleSnapDelay = (
+	                            attributes.preventDoubleSnapDelay
+	                        );
+	                        if (preventDoubleSnapDelay === 'false') {
+	                            scope.preventDoubleSnapDelay = false;
+	                        } else {
+	                            preventDoubleSnapDelay = parseInt(
+	                                preventDoubleSnapDelay,
+	                                10
+	                            );
+	                            if (isNaN(preventDoubleSnapDelay)) {
+	                                preventDoubleSnapDelay = (
+	                                    defaultSnapscrollPreventDoubleSnapDelay
+	                                );
+	                            }
+	                            scope.preventDoubleSnapDelay = preventDoubleSnapDelay;
+	                        }
+
 	                        var snapEasing = attributes.snapEasing;
 	                        if (isDefined(snapEasing)) {
 	                            scope.snapEasing = scope.$parent.$eval(snapEasing);
@@ -85241,6 +85227,8 @@
 	                        scope.preventSnappingAfterManualScroll = isDefined(
 	                            attributes.preventSnappingAfterManualScroll
 	                        );
+
+	                        scope.ignoreWheelClass = attributes.ignoreWheelClass;
 
 	                        if (element.css('overflowY') !== 'scroll') {
 	                            element.css('overflowY', 'auto');
