@@ -1,0 +1,12 @@
+.project-right, .project-expanded {
+background-color: #fff;
+height: 100%!important;
+margin-top: -15px;
+background-color: lightblue;
+}
+
+.content {
+  padding-top: 125px;
+  width: 85%;
+  margin: auto
+}

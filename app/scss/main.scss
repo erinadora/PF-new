@@ -1,0 +1,68 @@
+// ******
+// FONTS/TYPOGRAPHY
+// ******
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700&subset=latin-ext');
+.plain-text {
+    font-family: "Courier New", Courier, monospace;
+}
+
+@font-face {
+  src: url('../fonts/roung.otf');
+  font-family: roung;
+}
+
+@font-face {
+  src: url('../fonts/moons.otf');
+  font-family: moons;
+}
+
+@font-face {
+  src: url('../fonts/MinionPro-It.otf');
+  font-family: minion;
+}
+
+// ******
+// BASIC:
+// ******
+html,
+body,
+.viewport {
+    font-family: 'roung', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #212121;
+    background: #fff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+@mixin prefix($name, $argument) {
+    -webkit-#{$name}: #{$argument};
+    -ms-#{$name}: #{$argument};
+    -moz-#{$name}: #{$argument};
+    -o-#{$name}: #{$argument};
+    #{$name}: #{$argument};
+}
+.portfolio {
+    height: 100vh;
+    margin: 0 auto;
+}
+
+
+// ******
+// IMORTS:
+// ******
+
+@import "_palette";
+@import "_layout";
+@import "_leftFixed";
+@import "_projectRight";

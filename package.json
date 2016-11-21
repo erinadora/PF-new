@@ -1,0 +1,58 @@
+{
+  "name": "aca-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio fall 2016 Alex Cole Anderson",
+  "main": "server.js",
+  "scripts": {
+    "dev": "webpack && webpack-dev-server --inline",
+    "build": "webpack",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andalex//fall-2016-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andalex/fall-2016-portfolio/issues"
+  },
+  "homepage": "https://github.com/andalex/fall-2016-portfolio#readme",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-animate": "^1.5.0",
+    "angular-aria": "^1.5.8",
+    "angular-material": "^1.1.1",
+    "angular-route": "^1.5.0",
+    "angular-snapscroll": "^1.0.0",
+    "angular-swipe": "^0.4.0",
+    "angular-ui-router": "^0.2.18",
+    "babel-core": "^6.5.1",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
+    "body-parser": "^1.15.2",
+    "bootstrap-loader": "^2.0.0-beta.12",
+    "css-loader": "^0.23.1",
+    "exports-loader": "^0.6.3",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.0",
+    "html-webpack-plugin": "^2.8.1",
+    "imports-loader": "^0.6.5",
+    "jquery": "^2.2.0",
+    "jshint": "^2.9.1",
+    "jshint-loader": "^0.8.3",
+    "morgan": "^1.7.0",
+    "ng-smooth-scroll": "^1.7.3",
+    "node-sass": "^3.4.2",
+    "resolve-url-loader": "^1.4.3",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "devDependencies": {
+    "angular-swipe": "^0.4.0"
+  }
+}

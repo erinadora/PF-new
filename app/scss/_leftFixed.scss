@@ -1,0 +1,55 @@
+#left-side {
+  background-color: #fff;
+}
+
+#logo {
+  margin-top: 25px;
+  margin-left: 30px;
+  width: 55px;
+}
+
+#static-content {
+  padding: 15px;
+  margin: 100px;
+  text-align: left;
+  width: 353px;
+  height:393px;
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: lighter;
+  }
+  p {
+    font-family: minion;
+    letter-spacing: 1px;
+    margin-top: 40px;
+  }
+}
+
+h1 {
+  font-family: moons;
+  font-size: 45px;
+  margin-bottom: 70px;
+}
+
+nav {
+  margin-bottom: 15px;
+  bottom: 0!important;
+  position: fixed;
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover {
+    opacity: 0.5;
+    transition: all ease .5s;
+  }
+}
